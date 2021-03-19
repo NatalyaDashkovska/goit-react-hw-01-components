@@ -11,7 +11,7 @@ const Data = ({ id, label, percentage }) => {
 };
 
 Data.propTypes = {
-  key: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   percentage: PropTypes.string.isRequired,
 };

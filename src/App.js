@@ -2,10 +2,12 @@ import React from "react";
 import Profile from "./components/social-net/social-profile";
 import Statistics from "./components/statistic/stats";
 import FriendList from "./components/friend-list/freind-list";
+import TransactionHistory from "./components/table/fff";
 import users from "./components/social-net/user.json";
 import statisticalData from "./components/statistic/statistical-data.json";
 import friends from "./components/friend-list/friends.json";
-// console.log(friends);
+import transactions from "./components/table/transactions.json";
+// console.log(transactions);
 const App = () => {
   return (
     <div>
@@ -20,6 +22,7 @@ const App = () => {
       <Statistics title="Upload stats" stats={statisticalData} />;
       <Statistics stats={statisticalData} />;
       <FriendList friends={friends} />,
+      <TransactionHistory items={transactions} />;
     </div>
   );
 };
