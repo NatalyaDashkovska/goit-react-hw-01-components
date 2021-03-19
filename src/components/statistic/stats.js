@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./data";
-console.log(Data);
+// console.log(Data);
 const Statistics = ({ stats, title }) => (
   <section class="statistics">
     {title && <h2 class="title">{title}</h2>}
@@ -11,5 +11,5 @@ const Statistics = ({ stats, title }) => (
     </ul>
   </section>
 );
-console.dir(Statistics);
+// console.dir(Statistics);
 export default Statistics;

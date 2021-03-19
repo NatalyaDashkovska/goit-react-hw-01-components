@@ -15,5 +15,5 @@ Data.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.string.isRequired,
 };
-console.log(Data);
+// console.log(Data);
 export default Data;
