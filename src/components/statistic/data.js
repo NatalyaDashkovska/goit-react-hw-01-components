@@ -13,7 +13,7 @@ const Data = ({ id, label, percentage }) => {
 Data.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  percentage: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 // console.log(Data);
 export default Data;
