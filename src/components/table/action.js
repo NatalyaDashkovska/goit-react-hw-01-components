@@ -1,20 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Trans = ({ type, amount, currency, id }) => {
+const Action = ({ type, amount, currency }) => {
   return (
-    <tr key={id}>
+    <>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
-    </tr>
+    </>
   );
 };
-Trans.propTypes = {
-  id: PropTypes.string.isRequired,
+Action.propTypes = {
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
 };
-// console.log(Trans);
-export default Trans;
+// console.log(Action);
+export default Action;
