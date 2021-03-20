@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Action from "./action";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Action from './action';
 const TransactionHistory = ({ items }) => (
   <table class="transaction-history">
     <thead>
@@ -12,7 +12,7 @@ const TransactionHistory = ({ items }) => (
     </thead>
 
     <tbody>
-      {items.map((item) => (
+      {items.map(item => (
         <tr key={item.id}>
           <Action
             type={item.type}
