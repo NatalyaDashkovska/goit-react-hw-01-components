@@ -1,13 +1,18 @@
-import React from "react";
-import Data from "./data";
-import PropTypes from "prop-types";
-// console.log(Data);
+import React from 'react';
+import Data from './data';
+import PropTypes from 'prop-types';
+import styles from './Statistic.module.css';
+import makeRandomColor from './func.js';
 const Statistics = ({ stats, title }) => (
-  <section class="statistics">
-    {title && <h2 class="title">{title}</h2>}
-    <ul class="stat-list">
-      {stats.map((st) => (
-        <li key={st.id}>
+  <section className={styles.statistics}>
+    {title && <h2 className={styles.title}>{title}</h2>}
+    <ul className={styles.stat_list}>
+      {stats.map(st => (
+        <li
+          key={st.id}
+          style={{ backgroundColor: makeRandomColor() }}
+          className={styles.item}
+        >
           <Data label={st.label} percentage={st.percentage} />
         </li>
       ))}
@@ -22,7 +27,7 @@ Statistics.propTypes = {
 };
 
 Statistics.defaultProps = {
-  title: "",
+  title: '',
 };
-// console.dir(Statistics);
+
 export default Statistics;

@@ -1,0 +1,53 @@
+.friend_list {
+  outline: 1px solid red;
+  width: 370px;
+  background: linear-gradient(
+    rgb(170, 63, 165) 0%,
+    rgb(131, 187, 154) 33%,
+    rgb(206, 166, 80) 100%
+  );
+
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+.friend_list:hover {
+  width: 380px;
+  background: linear-gradient(
+    rgb(248, 11, 11) 0%,
+    rgb(232, 243, 85) 33%,
+    rgb(18, 241, 241) 100%
+  );
+}
+.online {
+  outline: 1px solid red;
+  background-color: green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.offline {
+  outline: 1px solid red;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.avatar {
+  outline: 1px solid red;
+}
+.name {
+  outline: 1px solid red;
+}
+.item {
+  outline: 1px solid red;
+  text-decoration: none;
+
+  display: flex;
+
+  margin: 0;
+  list-style: none;
+  padding: 10px;
+}

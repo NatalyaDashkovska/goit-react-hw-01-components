@@ -1,11 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Statistic.module.css';
 
 const Data = ({ label, percentage }) => {
   return (
     <>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}</span>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
     </>
   );
 };
