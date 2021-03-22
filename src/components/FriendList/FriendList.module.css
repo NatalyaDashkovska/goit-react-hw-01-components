@@ -1,5 +1,4 @@
 .friend_list {
-  outline: 1px solid red;
   width: 370px;
   background: linear-gradient(
     rgb(170, 63, 165) 0%,
@@ -20,7 +19,6 @@
   );
 }
 .online {
-  outline: 1px solid red;
   background-color: green;
   border-radius: 50%;
   width: 20px;
@@ -28,7 +26,6 @@
   margin-right: 10px;
 }
 .offline {
-  outline: 1px solid red;
   background-color: red;
   border-radius: 50%;
   width: 20px;
@@ -36,18 +33,14 @@
   margin-right: 10px;
 }
 .avatar {
-  outline: 1px solid red;
+  margin-right: 15px;
 }
 .name {
-  outline: 1px solid red;
+  margin-right: 0px;
 }
 .item {
-  outline: 1px solid red;
   text-decoration: none;
-
   display: flex;
-
-  margin: 0;
-  list-style: none;
   padding: 10px;
+  width: 200px;
 }
